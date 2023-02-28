@@ -57,28 +57,10 @@
   const urlSpan = document.querySelector('#url')
   const prefix = 'live2d-widget-model-'
   const cdnPrefix = 'https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0'
-  const model = ['chitose',
+  const model = [
     'epsilon2_1',
-    'gf',
     'haru-01',
     'haru-02',
-    'haruto',
-    'hibiki',
-    'hijiki',
-    'izumi',
-    'koharu',
-    'miku',
-    'ni-j',
-    'nico',
-    'nietzsche',
-    'nipsilon',
-    'nito',
-    'shizuku',
-    'tororo',
-    'tsumiki',
-    'unitychan',
-    'wanko',
-    'z16',]
 
   const radioHtml = model.reduce(((last, current) => last + `<label for="${current}"><input type="radio" id="${current}" name="modelName" class="modelRadio" value="${current}">${current}</label>`), '')
 
